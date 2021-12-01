@@ -15,7 +15,7 @@ export default function ProfileForm() {
 
   function onSubmit(data) {
     setProfile(data);
-    history.push('/social');
+    history.push('/multi-step-form/social');
   }
 
   return (

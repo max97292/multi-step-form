@@ -13,11 +13,11 @@ export default function StepLinks() {
 
   return (
     <div className='step-links'>
-      <NavLink to='/' exact>
+      <NavLink to='/multi-step-form' exact>
         {isProfileDone ? '🔴' : '⚪'}Profile <span />
       </NavLink>
       {isProfileDone ? (
-        <NavLink to='/social'>
+        <NavLink to='/multi-step-form/social'>
           {isSocialDone ? '🔴' : '⚪'}Social <span />
         </NavLink>
       ) : (
@@ -26,7 +26,7 @@ export default function StepLinks() {
         </a>
       )}
       {isProfileDone && isSocialDone ? (
-        <NavLink to='/review' style={{ float: 'right' }}>
+        <NavLink to='/multi-step-form/review' style={{ float: 'right' }}>
           Review <span />
         </NavLink>
       ) : (

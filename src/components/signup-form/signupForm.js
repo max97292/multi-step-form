@@ -17,9 +17,13 @@ export default function SignupForm() {
 
         <AnimatePresence>
           <Switch location={location} key={location.pathname}>
-            <Route exact path='/' component={ProfileForm} />
-            <Route exact path='/social' component={SocialForm} />
-            <Route exact path='/review' component={Review} />
+            <Route exact path='/multi-step-form' component={ProfileForm} />
+            <Route
+              exact
+              path='/multi-step-form/social'
+              component={SocialForm}
+            />
+            <Route exact path='/multi-step-form/review' component={Review} />
           </Switch>
         </AnimatePresence>
       </div>

@@ -15,7 +15,7 @@ export default function SocialForm() {
 
   function onSubmit(data) {
     setSocial(data);
-    history.push('/review');
+    history.push('/multi-step-form/review');
   }
 
   return (
